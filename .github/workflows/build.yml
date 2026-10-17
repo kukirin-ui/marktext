@@ -29,6 +29,10 @@ jobs:
             os: ubuntu-24.04-arm
             platform: linux
             arch: arm64
+          - name: linux-arm64-2204
+            os: ubuntu-22.04-arm
+            platform: linux
+            arch: arm64
 
     steps:
       - uses: actions/checkout@v7
