@@ -21,16 +21,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: linux-x64
-            os: ubuntu-latest
-            platform: linux
-            arch: x64
           - name: linux-arm64
             os: ubuntu-24.04-arm
-            platform: linux
-            arch: arm64
-          - name: linux-arm64-2204
-            os: ubuntu-22.04-arm
             platform: linux
             arch: arm64
 
@@ -86,5 +78,6 @@ jobs:
             dist/*.deb
             dist/*.rpm
             dist/*.tar.gz
+            dist/*.yml
           if-no-files-found: error
 
